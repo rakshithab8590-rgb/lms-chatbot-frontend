@@ -461,7 +461,7 @@ export default function YatiChatbot(){
   const toggleChat=()=>{ if(animState==="open")closeChat(); else if(animState==="closed")openChat(); };
 
   ////changed cause env file has been created
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = import.meta.env.VITE_API_URL;
 
 const sendMessage = async () => {
   const text = input.trim();
@@ -473,6 +473,7 @@ const sendMessage = async () => {
   const userMsg = { id: uid(), role: "user", content: text };
   setMessages(prev => [...prev, userMsg]);
   setLoading(true);
+
 
   try {
     const response = await fetch(`${BACKEND_URL}/api/chat`, {
