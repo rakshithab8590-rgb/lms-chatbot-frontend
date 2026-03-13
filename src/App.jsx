@@ -124,7 +124,7 @@ const CSS = `
 
 `;
 
-const SYSTEM = `You are YUKTHI AI, the intelligent assistant for YATICORP SkillX — a professional AI-powered LMS platform.
+const SYSTEM = `You are Edubot, the intelligent assistant for YATICORP SkillX — a professional AI-powered LMS platform.
 
 You help learners with:
 - Course navigation and recommendations across AI, Data Analytics, Cyber Security, HR, Hospitality, Civil Engineering and more
@@ -303,7 +303,7 @@ function RoboYati() {
         <span style={{fontFamily:"'Barlow',sans-serif",fontWeight:700,fontSize:15,
           background:"linear-gradient(135deg,#1E90FF,#0EE6D1)",
           WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",letterSpacing:"0.06em"}}>
-          YUKTHI AI
+          Edubot
         </span>
         <div className="robo-status" style={{display:"flex",alignItems:"center",gap:4,
           padding:"3px 10px",borderRadius:99,
